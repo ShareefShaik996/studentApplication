@@ -1,0 +1,57 @@
+AjaxDatePicker1: AjaxDatePicker {
+	value = emp.empDob;
+}
+
+Conditional1: WOConditional {
+	condition = c1;
+}
+
+Form1: WOForm {
+	multipleSubmit = true;
+}
+
+PopUpButton1: WOPopUpButton {
+	displayString = deptItem.deptName;
+	item = deptItem;
+	list = empDeptList;
+	noSelectionString = "--Choose--";
+	selection = selectedDep;
+}
+
+String1: WOString {
+	value = "Employee Form";
+}
+
+String2: WOString {
+	value = "Account with Employee ID already present, please try with another EMPID";
+}
+
+SubmitButton1: WOSubmitButton {
+	action = saveButton;
+	value = "SAVE";
+}
+
+SubmitButton2: WOSubmitButton {
+	action = backButton;
+	value = "BACK";
+}
+
+TextField1: WOTextField {
+	value = emp.empID;
+}
+
+TextField2: WOTextField {
+	value = emp.empName;
+}
+
+TextField3: WOTextField {
+	value = emp.empSal;
+}
+
+TextField4: WOTextField {
+	value = emp.empAddress;
+}
+
+TextField5: WOTextField {
+	value = emp.empRole;
+}

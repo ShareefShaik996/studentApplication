@@ -1,0 +1,70 @@
+Conditional1: WOConditional {
+	condition = c1;
+}
+
+Form1: WOForm {
+	multipleSubmit = true;
+}
+
+Repetition1: WORepetition {
+	item = d;
+	list = deptList;
+}
+
+Repetition2: WORepetition {
+	item = ad;
+	list = removedDetails;
+}
+
+String1: WOString {
+	value = "Department Details";
+}
+
+String2: WOString {
+	value = d.deptID;
+}
+
+String3: WOString {
+	value = d.deptName;
+}
+
+String4: WOString {
+	value = d.deptLoc;
+}
+
+String5: WOString {
+	value = ad.deptLoc;
+}
+
+String6: WOString {
+	value = ad.deptName;
+}
+
+String7: WOString {
+	value = ad.deptID;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = editButton;
+	value = "EDIT";
+}
+
+SubmitButton2: WOSubmitButton {
+	action = removeButton;
+	value = "REMOVE";
+}
+
+SubmitButton3: WOSubmitButton {
+	action = addButton;
+	value = "ADD";
+}
+
+SubmitButton4: WOSubmitButton {
+	action = employeeButton;
+	value = "Employee";
+}
+
+SubmitButton6: WOSubmitButton {
+	action = addAgainButton;
+	value = "ADD";
+}

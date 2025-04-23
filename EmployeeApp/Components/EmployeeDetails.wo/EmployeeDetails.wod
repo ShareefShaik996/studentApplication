@@ -1,0 +1,107 @@
+Conditional1: WOConditional {
+	condition = c1;
+}
+
+Form1: WOForm {
+	multipleSubmit = true;
+}
+
+Repetition1: WORepetition {
+	item = empListItem;
+	list = empList;
+}
+
+Repetition2: WORepetition {
+	item = empRem;
+	list = removedEmpList;
+}
+
+String1: WOString {
+	value = "Employee Details";
+}
+
+String10: WOString {
+	value = empRem.empDob;
+}
+
+String11: WOString {
+	value = empRem.empSal;
+}
+
+String12: WOString {
+	value = empRem.empName;
+}
+
+String13: WOString {
+	value = empRem.empID;
+}
+
+String14: WOString {
+	value = empListItem.deptForm.deptName;
+}
+
+String15: WOString {
+	value = empRem.deptForm.deptName;
+}
+
+String2: WOString {
+	value = empListItem.empID;
+}
+
+String3: WOString {
+	value = empListItem.empName;
+}
+
+String4: WOString {
+	value = empRem.empRole;
+}
+
+String5: WOString {
+	value = empListItem.empSal;
+}
+
+String6: WOString {
+	value = empListItem.empDob;
+}
+
+String7: WOString {
+	value = empListItem.empAddress;
+}
+
+String8: WOString {
+	value = empListItem.empRole;
+}
+
+String9: WOString {
+	value = empRem.empAddress;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = deptButton;
+	value = "Department";
+}
+
+SubmitButton2: WOSubmitButton {
+	action = editButton;
+	value = "EDIT";
+}
+
+SubmitButton3: WOSubmitButton {
+	action = removeButton;
+	value = "REMOVE";
+}
+
+SubmitButton4: WOSubmitButton {
+	action = addAgainButton;
+	value = "ADD";
+}
+
+SubmitButton5: WOSubmitButton {
+	action = addButton;
+	value = "ADD";
+}
+
+SubmitButton6: WOSubmitButton {
+	action = searchButton;
+	value = "SEARCH";
+}

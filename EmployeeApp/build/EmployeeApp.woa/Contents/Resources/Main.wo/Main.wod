@@ -1,0 +1,50 @@
+Conditional1: WOConditional {
+	condition = c1;
+}
+
+Conditional2: WOConditional {
+	condition = c1;
+	negate = true;
+}
+
+Conditional3: WOConditional {
+	condition = c2;
+}
+
+Form1: WOForm {
+	multipleSubmit = true;
+}
+
+String1: WOString {
+	value = "Department Form";
+}
+
+String2: WOString {
+	value = "Thanks For Visiting...";
+}
+
+String3: WOString {
+	value = "Dept with the deptID already present please give another deptID";
+}
+
+SubmitButton1: WOSubmitButton {
+	action = saveButton;
+	value = "SAVE";
+}
+
+SubmitButton2: WOSubmitButton {
+	action = backButton;
+	value = "BACK";
+}
+
+TextField1: WOTextField {
+	value = dept.deptID;
+}
+
+TextField2: WOTextField {
+	value = dept.deptName;
+}
+
+TextField3: WOTextField {
+	value = dept.deptLoc;
+}

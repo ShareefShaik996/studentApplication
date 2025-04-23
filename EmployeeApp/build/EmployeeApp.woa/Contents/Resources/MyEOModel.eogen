@@ -1,0 +1,8 @@
+ -destination Sources \
+ -extension java \
+ -java \
+ -model Resources/MyEOModel.eomodeld \
+ -packagedirs \
+ -subclassDestination Sources \
+ -verbose \
+ -loadModelGroup

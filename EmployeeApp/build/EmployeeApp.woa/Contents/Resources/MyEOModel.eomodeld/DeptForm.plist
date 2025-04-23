@@ -1,0 +1,55 @@
+{
+    attributes = (
+        {
+            columnName = deptID; 
+            externalType = varchar; 
+            name = deptID; 
+            valueClassName = NSString; 
+            width = 56; 
+        }, 
+        {
+            columnName = "dept_loc"; 
+            externalType = varchar; 
+            name = deptLoc; 
+            valueClassName = NSString; 
+            width = 56; 
+        }, 
+        {
+            columnName = "dept_name"; 
+            externalType = varchar; 
+            name = deptName; 
+            valueClassName = NSString; 
+            width = 56; 
+        }, 
+        {
+            columnName = id; 
+            externalType = decimal; 
+            name = id; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "remove_check"; 
+            externalType = varchar; 
+            name = removeCheck; 
+            valueClassName = NSString; 
+            width = 56; 
+        }
+    ); 
+    className = DeptForm; 
+    classProperties = (deptID, deptLoc, deptName, employeeFormDbs, id, removeCheck); 
+    externalName = "dept_form_shareef"; 
+    fetchSpecificationDictionary = {}; 
+    name = DeptForm; 
+    primaryKeyAttributes = (id); 
+    relationships = (
+        {
+            destination = EmployeeFormDb; 
+            isToMany = Y; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = selectedDept; sourceAttribute = id; }); 
+            name = employeeFormDbs; 
+        }
+    ); 
+}

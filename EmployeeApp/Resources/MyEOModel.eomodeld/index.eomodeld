@@ -1,0 +1,14 @@
+{
+    EOModelVersion = "2.1"; 
+    adaptorName = JDBC; 
+    connectionDictionary = {
+        URL = "jdbc:mysql://192.168.50.20/training2019"; 
+        driver = "com.mysql.jdbc.Driver"; 
+        password = "7HYJUYTGB6&j"; 
+        username = evergent2019; 
+    }; 
+    entities = (
+        {className = DeptForm; name = DeptForm; }, 
+        {className = EmployeeFormDb; name = EmployeeFormDb; }
+    ); 
+}

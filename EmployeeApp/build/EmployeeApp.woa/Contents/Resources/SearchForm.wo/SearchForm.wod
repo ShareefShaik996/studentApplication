@@ -1,0 +1,116 @@
+CheckBox1: WOCheckBox {
+	checked = empNameCheck;
+}
+
+CheckBox2: WOCheckBox {
+	checked = empRoleCheck;
+}
+
+CheckBox3: WOCheckBox {
+	checked = empIdCheck;
+}
+
+CheckBox4: WOCheckBox {
+	checked = salCheck;
+}
+
+CheckBox5: WOCheckBox {
+	checked = salCheck1;
+}
+
+CheckBox6: WOCheckBox {
+	checked = salCheck2;
+}
+
+CheckBox7: WOCheckBox {
+	checked = salCheck3;
+}
+
+Conditional1: WOConditional {
+	condition = c1;
+}
+
+Form1: WOForm {
+	multipleSubmit = true;
+}
+
+Form2: WOForm {
+	multipleSubmit = true;
+}
+
+PopUpButton1: WOPopUpButton {
+	displayString = empListItem.empID;
+	item = empListItem;
+	list = empList;
+	selection = empSID;
+	noSelectionString = "--Choose--";
+}
+
+RadioButton1: WORadioButton {
+	checked = andCheck;
+	name = "searchOption";
+}
+
+RadioButton2: WORadioButton {
+	checked = orCheck;
+	name = "searchOption";
+}
+
+Repetition1: WORepetition {
+	item = st;
+	list = sortedEmp;
+}
+
+String1: WOString {
+	value = "SEARCH FORM";
+}
+
+String2: WOString {
+	value = st.empID;
+}
+
+String3: WOString {
+	value = st.empName;
+}
+
+String4: WOString {
+	value = st.deptForm.deptName;
+}
+
+String5: WOString {
+	value = st.empSal;
+}
+
+String6: WOString {
+	value = st.empDob;
+}
+
+String7: WOString {
+	value = st.empAddress;
+}
+
+String8: WOString {
+	value = st.empRole;
+}
+
+SubmitButton1: WOSubmitButton {
+	action = goButton;
+	value = "GO";
+}
+
+SubmitButton2: WOSubmitButton {
+	action = backButton;
+	value = "BACK";
+}
+
+TextField1: WOTextField {
+	value = empSName;
+}
+
+TextField2: WOTextField {
+	value = empSRole;
+}
+
+TextField3: WOTextField {
+	value = salValue;
+}

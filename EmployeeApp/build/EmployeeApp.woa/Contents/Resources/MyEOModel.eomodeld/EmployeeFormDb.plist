@@ -1,0 +1,87 @@
+{
+    attributes = (
+        {
+            columnName = "emp_pk"; 
+            externalType = decimal; 
+            name = "emp_pk"; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            columnName = "emp_address"; 
+            externalType = varchar; 
+            name = empAddress; 
+            valueClassName = NSString; 
+            width = 56; 
+        }, 
+        {
+            allowsNull = N; 
+            columnName = "emp_dob"; 
+            externalType = datetime; 
+            name = empDob; 
+            serverTimeZone = UCT; 
+            valueClassName = NSCalendarDate; 
+            valueType = T; 
+        }, 
+        {
+            columnName = "emp_id"; 
+            externalType = varchar; 
+            name = empID; 
+            valueClassName = NSString; 
+            width = 56; 
+        }, 
+        {
+            columnName = "emp_name"; 
+            externalType = varchar; 
+            name = empName; 
+            valueClassName = NSString; 
+            width = 56; 
+        }, 
+        {
+            columnName = "emp_role"; 
+            externalType = varchar; 
+            name = empRole; 
+            valueClassName = NSString; 
+            width = 56; 
+        }, 
+        {
+            columnName = "emp_sal"; 
+            externalType = decimal; 
+            name = empSal; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = removeCheck; 
+            externalType = varchar; 
+            name = removeCheck; 
+            valueClassName = NSString; 
+            width = 56; 
+        }, 
+        {
+            allowsNull = Y; 
+            columnName = "selected_dept"; 
+            externalType = decimal; 
+            name = selectedDept; 
+            valueClassName = NSNumber; 
+            valueType = i; 
+        }
+    ); 
+    className = EmployeeFormDb; 
+    classProperties = (deptForm, empAddress, empDob, empID, empName, empRole, empSal, removeCheck); 
+    externalName = "emp_form"; 
+    fetchSpecificationDictionary = {}; 
+    internalInfo = {"_javaClientClassName" = EmployeeFormDb; }; 
+    name = EmployeeFormDb; 
+    primaryKeyAttributes = ("emp_pk"); 
+    relationships = (
+        {
+            destination = DeptForm; 
+            isToMany = N; 
+            joinSemantic = EOInnerJoin; 
+            joins = ({destinationAttribute = id; sourceAttribute = selectedDept; }); 
+            name = deptForm; 
+        }
+    ); 
+}
